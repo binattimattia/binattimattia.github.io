@@ -5,8 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  // Aggiungi questa riga qui sotto 👇
-  site: 'binattimattia.github.io',
+  // Assicurati che sia esattamente così, tutto minuscolo e senza spazi 👇
+  site: 'https://binattimattia.github.io',
   
   vite: {
     plugins: [tailwindcss()]
