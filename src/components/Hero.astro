@@ -1,0 +1,44 @@
+---
+---
+<section id="hero" class="min-h-[80vh] flex flex-col justify-center relative pt-20">
+  <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-32 bg-accent opacity-50 rounded-r-md hidden md:block"></div>
+  
+  <div class="md:pl-8 space-y-6">
+    <div>
+      <h1 class="text-5xl md:text-7xl font-display font-bold text-text mb-4 tracking-tight">
+        MATTIA BINATTI
+      </h1>
+      <h2 class="text-xl md:text-2xl text-muted font-display flex items-center gap-2">
+        Studente Tecnico Informatico <span class="text-accent">&middot;</span> Torino
+      </h2>
+    </div>
+
+    <div class="text-accent-2 font-display text-lg md:text-xl h-8 typewriter">
+      <span class="typing-text">"Networking. Web. Codice."</span><span class="animate-pulse">_</span>
+    </div>
+
+    <div class="flex flex-wrap gap-4 pt-4">
+      <a href="#progetti" class="px-6 py-3 bg-accent/10 text-accent border border-accent/20 rounded-md hover:bg-accent hover:text-[#000] transition-all duration-300 font-display text-sm flex items-center gap-2">
+        <span>&rarr;</span> Vedi i miei progetti
+      </a>
+      <a href="https://github.com/binattimattia" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-surface text-text border border-border rounded-md hover:border-muted transition-all duration-300 font-display text-sm flex items-center gap-2">
+        GitHub <span class="text-muted">&nearr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .typing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 3s steps(30, end) infinite alternate;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+</style>

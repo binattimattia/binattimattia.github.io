@@ -1,17 +1,52 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Formazione from '../components/Formazione.astro';
+import Progetti from '../components/Progetti.astro';
+import Esperienze from '../components/Esperienze.astro';
+import Lingue from '../components/Lingue.astro';
+import Contatti from '../components/Contatti.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Mattia Binatti — Tecnico Informatico">
+  <Nav />
+  <main class="flex flex-col gap-12 mt-12 md:mt-0">
+    <Hero />
+    <div class="space-y-32">
+      <About />
+      <Formazione />
+      <Progetti />
+      <Esperienze />
+      <Lingue />
+      <Contatti />
+    </div>
+  </main>
+</Layout>
+
+<script>
+  // Simple intersection observer for stagger animations
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: "0px 0px -100px 0px" });
+
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-700', 'ease-out');
+      observer.observe(section);
+    });
+  });
+</script>
+
+<style is:global>
+  section.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>

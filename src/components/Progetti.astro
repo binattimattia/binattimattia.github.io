@@ -1,0 +1,42 @@
+---
+---
+<section id="progetti" class="py-20 border-t border-border/50">
+  <div class="mb-10">
+    <h2 class="text-3xl font-display font-bold flex items-center gap-4">
+      <span class="text-accent text-xl">03.</span> Progetti Selezionati
+    </h2>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Card BrainShift -->
+    <a href="https://github.com/binattimattia/BrainShift-BinattiMezzadri" target="_blank" rel="noopener noreferrer" class="group block p-6 rounded-lg bg-surface border border-border hover:border-accent hover:-translate-y-1 transition-all duration-300">
+      <div class="flex justify-between items-start mb-4">
+        <div class="w-10 h-10 rounded bg-accent/10 flex items-center justify-center text-accent">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted group-hover:text-accent transition-colors"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      </div>
+      <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors">BrainShift</h3>
+      <p class="text-muted text-sm mb-6">
+        Gioco di riflessi sviluppato con Pygame — progetto collaborativo con Mezzadri.
+      </p>
+      <div class="flex gap-2">
+        <span class="text-xs font-display text-accent-2">Python</span>
+        <span class="text-xs font-display text-accent-2">Pygame</span>
+      </div>
+    </a>
+
+    <!-- Altre tecnologie -->
+    <div class="p-6 rounded-lg bg-surface border border-border flex flex-col justify-center">
+      <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        Tech Stack
+      </h3>
+      <div class="flex flex-wrap gap-2">
+        {['Python', 'JavaScript', 'Vue.js', 'HTML/CSS', 'Pygame', 'REST API', 'Node.js'].map((tech) => (
+          <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-display text-text">{tech}</span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
