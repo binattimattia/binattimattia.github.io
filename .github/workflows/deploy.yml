@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ] # Se il tuo ramo principale si chiama "master", cambia "main" in "master"
+    branches: [ master ] # Se il tuo ramo principale si chiama "master", cambia "main" in "master"
 
 permissions:
   contents: read
