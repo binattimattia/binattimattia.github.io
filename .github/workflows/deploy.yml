@@ -16,15 +16,25 @@ jobs:
       - name: Checkout your repository
         uses: actions/checkout@v4
 
-      # Forziamo GitHub a usare Node.js 22 prima di far partire Astro 👇
-      - name: Setup Node.js
+      - name: Setup Node.js 22
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: 'npm'
 
-      - name: Install, build, and upload Astro site
-        uses: withastro/action@v3
+      # Installiamo le dipendenze
+      - name: Install dependencies
+        run: npm ci
+
+      # Compiliamo Astro (genererà la cartella 'dist')
+      - name: Build Astro site
+        run: npm run build
+
+      # Prepariamo i file compilati per l'invio a GitHub Pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist # Di base Astro compila dentro la cartella dist
 
   deploy:
     needs: build
