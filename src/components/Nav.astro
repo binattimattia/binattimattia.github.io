@@ -6,15 +6,22 @@
       <img src="/profile_image.png" alt="Mattia Binatti" class="w-15 h-15 rounded-full object-cover border-2 border-border group-hover:border-accent transition-colors" />
       <span></span>
     </a>
-    <ul class="hidden md:flex gap-6 text-sm font-display text-muted">
-      <li><a href="#about" class="hover:text-accent transition-colors">/about</a></li>
-      <li><a href="#formazione" class="hover:text-accent transition-colors">/formazione</a></li>
-      <li><a href="#progetti" class="hover:text-accent transition-colors">/progetti</a></li>
-      <li><a href="#esperienze" class="hover:text-accent transition-colors">/esperienze</a></li>
-      <li><a href="#contatti" class="hover:text-accent transition-colors">/contatti</a></li>
-    </ul>
-    <button class="md:hidden text-text hover:text-accent">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-    </button>
+    <div class="flex items-center gap-4">
+      <ul class="hidden md:flex gap-6 text-sm font-display text-muted items-center">
+        <li><a href="#about" class="hover:text-accent transition-colors">/about</a></li>
+        <li><a href="#formazione" class="hover:text-accent transition-colors">/formazione</a></li>
+        <li><a href="#progetti" class="hover:text-accent transition-colors">/progetti</a></li>
+        <li><a href="#esperienze" class="hover:text-accent transition-colors">/esperienze</a></li>
+        <li><a href="#contatti" class="hover:text-accent transition-colors">/contatti</a></li>
+      </ul>
+      <a href="/CurriculumVitae.pdf" download="Mattia_Binatti_CV.pdf" class="px-3 py-1.5 md:px-4 md:py-2 border border-accent/30 text-accent rounded-md hover:bg-accent/10 transition-colors flex items-center gap-2 text-sm font-display">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+        <span class="hidden md:inline">Scarica CV</span>
+        <span class="md:hidden">CV</span>
+      </a>
+      <button class="md:hidden text-text hover:text-accent">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
   </div>
 </nav>
